@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: transparent;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      #card {
+        position: absolute;
+        bottom: 60px;
+        right: 100px;
+        text-align: right;
+        background: rgba(10, 10, 10, 0.9);
+        border-right: 6px solid #FFD700;
+        padding: 32px 40px 32px 56px;
+        opacity: 0;
+        transform: scale(0.85);
+      }
+      #eyebrow {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 4px;
+        color: rgba(255,215,0,0.7);
+        margin-bottom: 12px;
+        opacity: 0;
+      }
+      #amount {
+        font-size: 104px;
+        font-weight: 900;
+        color: #FFD700;
+        line-height: 1;
+        text-shadow: 0 0 40px rgba(255,215,0,0.4);
+        opacity: 0;
+      }
+      #desc {
+        font-size: 26px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.7);
+        margin-top: 10px;
+        opacity: 0;
+      }
+      #glow {
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background: radial-gradient(ellipse at 85% 80%, rgba(255,215,0,0.08) 0%, transparent 60%);
+        opacity: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="glow"></div>
+    <div id="card">
+      <div id="eyebrow">MIDDLE EAST ARMS DEAL</div>
+      <div id="amount">₩12조</div>
+      <div id="desc">중동 방공망 수출 총액</div>
+    </div>
+
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="8"
+      data-width="1920"
+      data-height="1080"
+    ></div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to("#glow", { opacity: 1, duration: 0.8 }, 0);
+      tl.to("#card", { opacity: 1, scale: 1, duration: 0.5, ease: "back.out(1.4)" }, 0.2);
+      tl.to("#eyebrow", { opacity: 1, duration: 0.3 }, 0.4);
+      tl.to("#amount", { opacity: 1, duration: 0.4, ease: "power2.out" }, 0.5);
+      tl.to("#desc", { opacity: 1, duration: 0.3 }, 0.8);
+
+      // Gold shimmer pulse
+      tl.to("#amount", { textShadow: "0 0 60px rgba(255,215,0,0.8)", duration: 0.4, yoyo: true, repeat: 3 }, 1.5);
+
+      // Fade out
+      tl.to("#card", { opacity: 0, scale: 0.9, duration: 0.6, ease: "power2.in" }, 7.0);
+      tl.to("#glow", { opacity: 0, duration: 0.6 }, 7.0);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

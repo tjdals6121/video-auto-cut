@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: transparent;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      #overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.72);
+        opacity: 0;
+      }
+      #card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        opacity: 0;
+      }
+      #eyebrow {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: 6px;
+        color: #FFD700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      #title {
+        font-size: 96px;
+        font-weight: 900;
+        color: #FFFFFF;
+        line-height: 1.1;
+        text-shadow: 0 4px 24px rgba(0,0,0,0.6);
+        margin-bottom: 24px;
+      }
+      #subtitle {
+        font-size: 36px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.75);
+        letter-spacing: 2px;
+      }
+      #divider {
+        width: 120px;
+        height: 4px;
+        background: #FFD700;
+        margin: 20px auto;
+        transform: scaleX(0);
+        transform-origin: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="overlay"></div>
+    <div id="card">
+      <div id="eyebrow">Defense Analysis</div>
+      <div id="title">천궁-2의 진짜 이야기</div>
+      <div id="divider"></div>
+      <div id="subtitle">우크라이나 거절의 숨겨진 계산</div>
+    </div>
+
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="5"
+      data-width="1920"
+      data-height="1080"
+    ></div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      // Fade in overlay
+      tl.to("#overlay", { opacity: 1, duration: 0.5 }, 0);
+      // Card slides up + fades in
+      tl.fromTo("#card", { opacity: 0, y: 60 }, { opacity: 1, y: 0, duration: 0.7, ease: "power3.out" }, 0.2);
+      // Eyebrow
+      tl.from("#eyebrow", { opacity: 0, y: -20, duration: 0.4 }, 0.4);
+      // Title
+      tl.from("#title", { opacity: 0, y: 30, duration: 0.5 }, 0.5);
+      // Divider
+      tl.to("#divider", { scaleX: 1, duration: 0.4, ease: "power2.out" }, 0.8);
+      // Subtitle
+      tl.from("#subtitle", { opacity: 0, duration: 0.4 }, 1.0);
+
+      // Hold until 3.8s, then fade out
+      tl.to("#card", { opacity: 0, y: -30, duration: 0.6, ease: "power2.in" }, 3.8);
+      tl.to("#overlay", { opacity: 0, duration: 0.6 }, 3.8);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

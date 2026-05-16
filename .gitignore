@@ -1,0 +1,19 @@
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.log
+.DS_Store
+Thumbs.db
+dist/
+build/
+
+# 영상/이미지 원본 (용량 초과로 GitHub 제외)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wav
+*.mp3
+edit/clips_graded/

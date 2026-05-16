@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1920, height=1080" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        width: 1920px;
+        height: 1080px;
+        overflow: hidden;
+        background: transparent;
+        font-family: 'Noto Sans KR', sans-serif;
+      }
+      #bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 220px;
+        background: rgba(8, 8, 8, 0.92);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 60px;
+        border-top: 3px solid rgba(255,255,255,0.15);
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        opacity: 0;
+      }
+      .item-name {
+        font-size: 22px;
+        font-weight: 700;
+        color: rgba(255,255,255,0.6);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      .item-price {
+        font-size: 72px;
+        font-weight: 900;
+        line-height: 1;
+      }
+      .item-unit {
+        font-size: 20px;
+        font-weight: 400;
+        color: rgba(255,255,255,0.5);
+      }
+      #cheongung .item-price { color: #4AE54A; }
+      #patriot .item-price { color: #FF5555; }
+      #vs-divider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        opacity: 0;
+      }
+      #vs-text {
+        font-size: 32px;
+        font-weight: 900;
+        color: rgba(255,255,255,0.3);
+      }
+      #ratio-badge {
+        background: #4AE54A;
+        color: #000;
+        font-size: 18px;
+        font-weight: 900;
+        padding: 6px 18px;
+        letter-spacing: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="bar">
+      <div class="item" id="cheongung">
+        <div class="item-name">천궁-2</div>
+        <div class="item-price">₩15억</div>
+        <div class="item-unit">기당 (2024 기준)</div>
+      </div>
+      <div id="vs-divider">
+        <div id="vs-text">VS</div>
+        <div id="ratio-badge">1/3.5 가격</div>
+      </div>
+      <div class="item" id="patriot">
+        <div class="item-name">패트리엇 PAC-3</div>
+        <div class="item-price">₩53억</div>
+        <div class="item-unit">기당</div>
+      </div>
+    </div>
+
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="10"
+      data-width="1920"
+      data-height="1080"
+    ></div>
+
+    <script>
+      window.__timelines = window.__timelines || {};
+      const tl = gsap.timeline({ paused: true });
+
+      tl.to("#bar", { opacity: 1, y: 0, duration: 0.5, ease: "power3.out" }, 0.2);
+      tl.to("#cheongung", { opacity: 1, duration: 0.4 }, 0.5);
+      tl.to("#vs-divider", { opacity: 1, duration: 0.3 }, 0.7);
+      tl.to("#patriot", { opacity: 1, duration: 0.4 }, 0.65);
+
+      // Highlight pulse on cheongung price at 2s
+      tl.to("#cheongung .item-price", { scale: 1.1, duration: 0.2, yoyo: true, repeat: 1 }, 2.0);
+
+      // Fade out at 9s
+      tl.to("#bar", { opacity: 0, y: 30, duration: 0.6, ease: "power2.in" }, 9.0);
+
+      window.__timelines["main"] = tl;
+    </script>
+  </body>
+</html>

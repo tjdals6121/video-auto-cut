@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "sources": {
+    "main": "C:/Users/user/Desktop/바이브코딩/영상 자동화 컷편집/컷편집 테스트.mp4"
+  },
+  "ranges": [
+    {"source": "main", "start": 3.40,   "end": 8.84,   "beat": "HOOK",    "quote": "주일 우크라이나 대사가 야스쿠니 신사에",                     "reason": "강력한 오프닝 훅"},
+    {"source": "main", "start": 9.40,   "end": 14.82,  "beat": "HOOK",    "quote": "참배하고 에스엔에스에 사진 올렸다",                           "reason": ""},
+    {"source": "main", "start": 16.88,  "end": 20.74,  "beat": "HOOK",    "quote": "그 사진을 올린 겁니다",                                       "reason": ""},
+    {"source": "main", "start": 22.38,  "end": 23.90,  "beat": "HOOK",    "quote": "야스쿠니가 어떤 곳입니까?",                                   "reason": ""},
+    {"source": "main", "start": 28.58,  "end": 40.38,  "beat": "HOOK",    "quote": "도조 히데키 A급 전범 14명 합산된 군국주의 상징",               "reason": "NG 제거 후 최종 테이크 연결"},
+    {"source": "main", "start": 46.02,  "end": 59.54,  "beat": "HOOK",    "quote": "강제동원 희생자 2만여 명 합사. 한번 생각해보세요",             "reason": "NG 제거 후 최종 테이크"},
+    {"source": "main", "start": 63.08,  "end": 68.70,  "beat": "HOOK",    "quote": "러시아의 침략전쟁에 맞서 싸운다는 나라의 외교관이",           "reason": "NG 제거"},
+    {"source": "main", "start": 82.10,  "end": 90.24,  "beat": "HOOK",    "quote": "침략전쟁 가해자 신사에 머리 숙이고 왔다. 이게 말이 됩니까?", "reason": "다시입니다 이후 최종 테이크"},
+    {"source": "main", "start": 92.16,  "end": 117.18, "beat": "HOOK",    "quote": "미국 교수도 분석. 게시물 삭제",                               "reason": ""},
+    {"source": "main", "start": 118.52, "end": 133.72, "beat": "HOOK",    "quote": "속이 터진다. 진짜 무서운 건 따로 있다. 등골이 서늘해진다",   "reason": "감정 피크 + 다음 섹션 예고"},
+
+    {"source": "main", "start": 134.52, "end": 144.48, "beat": "DEVELOP", "quote": "뭐냐? 북한 미사일. 핵심 엔진의 출처인",                       "reason": ""},
+    {"source": "main", "start": 150.62, "end": 156.40, "beat": "DEVELOP", "quote": "우크라이나가 유력하게 지목되고 있는 겁니다",                   "reason": "NG 제거 후 최종 테이크"},
+    {"source": "main", "start": 163.18, "end": 178.14, "beat": "DEVELOP", "quote": "영국 IISS 미사일 전문가. 충격적인 보고서",                     "reason": "NG 구간 분리"},
+    {"source": "main", "start": 183.34, "end": 195.30, "beat": "DEVELOP", "quote": "화성-12, 14형 ICBM 엔진이 알리이오공 계열과 동일",             "reason": ""},
+    {"source": "main", "start": 197.22, "end": 209.54, "beat": "DEVELOP", "quote": "알리이오공 어디서? 우크라이나 드니프로 유즈마시 공장",         "reason": ""},
+    {"source": "main", "start": 221.50, "end": 235.66, "beat": "DEVELOP", "quote": "친러 대통령 물러난 뒤 경영압박 → 암시장 유출 가능성",         "reason": "친러 반복 NG 제거"},
+    {"source": "main", "start": 236.58, "end": 243.18, "beat": "DEVELOP", "quote": "추력 90톤. 반으로 쪼개서 40~45톤짜리",                         "reason": ""},
+    {"source": "main", "start": 250.96, "end": 261.12, "beat": "DEVELOP", "quote": "화성-14(노즐 하나), 화성-15(두 개 묶어서) 설명",               "reason": "노즐 발음 NG 제거"},
+    {"source": "main", "start": 270.66, "end": 281.12, "beat": "DEVELOP", "quote": "솔직히. 한국 안보 직접 위협하는 핵 운반체로 둔갑",             "reason": ""},
+
+    {"source": "main", "start": 282.28, "end": 283.47, "beat": "DEVELOP", "quote": "근데 잠깐! 여러분",                                           "reason": "감정 전환 포인트"},
+    {"source": "main", "start": 285.06, "end": 286.50, "beat": "DEVELOP", "quote": "무서운 건 이게 끝이 아닙니다",                                 "reason": ""},
+    {"source": "main", "start": 291.60, "end": 305.82, "beat": "DEVELOP", "quote": "벨라루스 주재 북한 직원 → 유즈마시 직원 매수해서 기밀 논문을", "reason": "중복 제거"},
+    {"source": "main", "start": 311.80, "end": 325.20, "beat": "DEVELOP", "quote": "기밀 논문 차고에서 촬영하다 우크라이나 경찰 적발. 8년 형",     "reason": ""},
+    {"source": "main", "start": 326.06, "end": 342.26, "beat": "DEVELOP", "quote": "단순 추정이 아니에요. 흘러갔을 가능성 높다. 개인적으로 충격적","reason": ""},
+    {"source": "main", "start": 350.46, "end": 367.74, "beat": "DEVELOP", "quote": "화성 미사일의 심장, 우크라이나 공장이 가장 유력. 어마어마한 사실 아닙니까?", "reason": "NG 제거 후 최종 테이크"},
+
+    {"source": "main", "start": 370.70, "end": 379.88, "beat": "REVEAL",  "quote": "한국 정부가 천궁을 넘겨줄 수 있었을까? 절대 그럴 수 없었겠죠","reason": ""},
+    {"source": "main", "start": 402.24, "end": 414.28, "beat": "REVEAL",  "quote": "거절의 진짜 이유. 오늘 핵심. 한국 정부의 진짜 계산",           "reason": "반복 구간 제거"},
+    {"source": "main", "start": 415.48, "end": 420.70, "beat": "REVEAL",  "quote": "표면적으로 대외무역법",                                         "reason": ""},
+    {"source": "main", "start": 427.80, "end": 458.02, "beat": "REVEAL",  "quote": "전쟁 중 살상 무기 수출 원칙. 천궁은 방어용이지만 경계 모호. 표면적 이유", "reason": ""},
+    {"source": "main", "start": 459.96, "end": 471.38, "beat": "REVEAL",  "quote": "뭐냐? 천궁투의 출생 비밀. 1990년대 불곰 사업",                 "reason": ""},
+    {"source": "main", "start": 472.46, "end": 483.16, "beat": "REVEAL",  "quote": "러시아 빚을 무기기술로 대신 갚는 사업 + 항공미사일 기술 발전", "reason": ""},
+    {"source": "main", "start": 490.14, "end": 509.38, "beat": "REVEAL",  "quote": "비약적으로 발전. 천궁원 알마즈 안테이. 천궁투도 러시아 원형으로 출발", "reason": "NG 제거"},
+    {"source": "main", "start": 514.86, "end": 520.24, "beat": "REVEAL",  "quote": "한러 무기협정 제8조",                                           "reason": ""},
+    {"source": "main", "start": 530.76, "end": 541.14, "beat": "REVEAL",  "quote": "러시아 기술 사용 무기 → 러시아 동의 없이 제3국 재수출 불가 조항","reason": "NG 제거 후 최종 테이크"},
+    {"source": "main", "start": 547.98, "end": 554.62, "beat": "REVEAL",  "quote": "단순히 외부 기술이 아니라 협정 자체가 발목을 잡고 있는 셈",   "reason": "중복 조항 제거"},
+    {"source": "main", "start": 558.30, "end": 569.70, "beat": "REVEAL",  "quote": "다만 현재 천궁투는 독자 수출 가능 상태",                       "reason": ""},
+    {"source": "main", "start": 576.20, "end": 603.62, "beat": "REVEAL",  "quote": "UAE·사우디 수출 가능. 우크라이나는 러시아와 직접 전쟁. 러시아 정면 자극. 거절의 진짜 핵심", "reason": ""},
+    {"source": "main", "start": 614.26, "end": 616.64, "beat": "REVEAL",  "quote": "거기에 결정타가 또 있어요",                                     "reason": "반복 제거 후 최종 테이크"},
+    {"source": "main", "start": 622.54, "end": 630.62, "beat": "REVEAL",  "quote": "천궁투 생산라인이 중동 계약으로 꽉 차서 빈자리 없는 상태",     "reason": "반복 제거 후 최종 테이크"},
+    {"source": "main", "start": 640.16, "end": 643.62, "beat": "REVEAL",  "quote": "어디어디한테 팔았냐? 여러분들 다들 아시죠?",                   "reason": "반복 제거"},
+    {"source": "main", "start": 645.52, "end": 659.24, "beat": "REVEAL",  "quote": "UAE 35억, 사우디 32억, 이라크 28억 달러 줄줄이 계약",           "reason": ""},
+    {"source": "main", "start": 663.52, "end": 671.24, "beat": "REVEAL",  "quote": "줄줄이 계약 체결. 물리적으로 줄 수 없는 상황",                 "reason": "NG(허허 웃음) 제거"},
+
+    {"source": "main", "start": 673.96, "end": 691.02, "beat": "PAYOFF",  "quote": "이쯤 되면 납득 가시죠? 진짜 반전은 지금부터. 무릎 탁 치실 거예요", "reason": ""},
+    {"source": "main", "start": 696.56, "end": 700.70, "beat": "PAYOFF",  "quote": "거절의 결과가 어떻게 한국에게 돌아왔냐?",                       "reason": ""},
+    {"source": "main", "start": 702.24, "end": 716.14, "beat": "PAYOFF",  "quote": "영화같은 일. 이란이 UAE에 탄도미사일·드론 무차별 발사",         "reason": ""},
+    {"source": "main", "start": 717.88, "end": 735.10, "beat": "PAYOFF",  "quote": "단 두 개의 천궁투 포대가 막아야. 결과는? 육십여 발의",          "reason": ""},
+    {"source": "main", "start": 745.10, "end": 760.20, "beat": "PAYOFF",  "quote": "96% 요격 성공률! 패트리엇·애로와 다층 방공망",                 "reason": "NG 제거 후 최종 테이크"},
+    {"source": "main", "start": 769.58, "end": 781.76, "beat": "PAYOFF",  "quote": "천궁-2 핵심전력 평가. 심지어 한국산 방공무기가",               "reason": "말 더듬 구간 제거 후 최종"},
+    {"source": "main", "start": 788.30, "end": 793.40, "beat": "PAYOFF",  "quote": "타국의 영공을 직접 지켜낸 사상 최초의 사례",                   "reason": "기침 소리 구간 제거"},
+    {"source": "main", "start": 802.06, "end": 811.00, "beat": "PAYOFF",  "quote": "진짜 충격적인 건 가격과 생산속도. 천궁-2 한 발에 15억원",       "reason": ""},
+    {"source": "main", "start": 830.66, "end": 845.78, "beat": "PAYOFF",  "quote": "패트리엇 팻쓰리 53억. 천궁-2가 패트리엇의 1/4",               "reason": "반복 제거"},
+    {"source": "main", "start": 877.24, "end": 889.02, "beat": "PAYOFF",  "quote": "록히드 마틴 연 600발 생산 + 4~6년 대기",                       "reason": "더듬기 많은 구간 제거 후 최종 테이크"},
+    {"source": "main", "start": 900.84, "end": 914.22, "beat": "PAYOFF",  "quote": "LIG 넥스원 9~12개월 생산. 1년 만에! 어떻게 됐겠습니까?",       "reason": "NG 제거"},
+    {"source": "main", "start": 920.82, "end": 938.00, "beat": "PAYOFF",  "quote": "걸프 국가들 환호. LIG 넥스원에 SOS 보내기 시작",               "reason": ""},
+    {"source": "main", "start": 958.06, "end": 975.02, "beat": "PAYOFF",  "quote": "UAE 5일 만에 추가 구매 긴급 요청. C-17으로 유도탄 30여 발 공수","reason": "반복 제거"},
+    {"source": "main", "start": 980.66, "end": 997.62, "beat": "PAYOFF",  "quote": "원유 2400만 배럴 보답. 무기 팔고 에너지 받는 완벽한 순환",     "reason": ""},
+
+    {"source": "main", "start": 998.48,  "end": 1016.16, "beat": "CLOSE", "quote": "그림이 완성이 되시죠? 우크라이나에 넘겼다면 외교적 후폭풍",   "reason": ""},
+    {"source": "main", "start": 1017.12, "end": 1035.48, "beat": "CLOSE", "quote": "러시아 보복 위협 + 중동 신뢰 훼손 피하면서 12조 잭팟",         "reason": ""},
+    {"source": "main", "start": 1043.20, "end": 1060.38, "beat": "CLOSE", "quote": "한국 외교의 영리함. 거절은 외교의 패배가 아닙니다",             "reason": "반복 제거 후 최종"},
+    {"source": "main", "start": 1061.62, "end": 1068.38, "beat": "CLOSE", "quote": "현실이 외교에서도 쌓이는 사례",                                 "reason": ""},
+    {"source": "main", "start": 1071.50, "end": 1079.06, "beat": "CLOSE", "quote": "여러분은 어떻게 보세요? 잘한 결정? 아쉽다?",                   "reason": ""},
+    {"source": "main", "start": 1085.18, "end": 1093.22, "beat": "CLOSE", "quote": "댓글로 의견 남겨주시면 다 읽겠습니다. 구독과 좋아요",           "reason": "반복 제거 후 최종 테이크"},
+    {"source": "main", "start": 1099.20, "end": 1107.42, "beat": "CLOSE", "quote": "다음 영상 예고 - 천궁-2 중동 방공망 표준",                     "reason": ""},
+    {"source": "main", "start": 1116.20, "end": 1120.38, "beat": "CLOSE", "quote": "오늘도 함께해 주셔서 감사합니다",                               "reason": "NG(싹 다 쓸어) 제거"}
+  ],
+  "grade": "neutral_punch",
+  "overlays": [
+    {
+      "file": "../motion/intro-title.webm",
+      "start_in_output": 0.0,
+      "duration": 5.0,
+      "label": "인트로 타이틀카드"
+    },
+    {
+      "file": "../motion/stat-96.webm",
+      "start_in_output": 502.55,
+      "duration": 8.0,
+      "label": "96% 요격 성공률"
+    },
+    {
+      "file": "../motion/stat-price.webm",
+      "start_in_output": 543.87,
+      "duration": 10.0,
+      "label": "천궁-2 vs 패트리엇 가격 비교"
+    },
+    {
+      "file": "../motion/stat-jackpot.webm",
+      "start_in_output": 652.93,
+      "duration": 8.0,
+      "label": "12조 잭팟"
+    }
+  ],
+  "subtitles": "master.srt"
+}
