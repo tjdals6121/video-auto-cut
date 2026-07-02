@@ -55,3 +55,6 @@ node ~/Developer/hyperframes/packages/cli/dist/cli.js render   # MP4 출력
 - bun은 `~/.bun/bin/bun` 경로 (PATH에 추가 필요)
 - hyperframes 빌드 완료: `~/Developer/hyperframes/packages/cli/dist/cli.js`
 - ⚠️ 버전 번호는 사용자에게 먼저 확인 후 결정
+
+## 이관된 기록 (2026-07-02 루트 .claude\CLAUDE.md에서 이동)
+- 미완료 작업: 테스트 영상 파일 분리 (약 4,350MB — 프로젝트 밖 별도 보관으로)
